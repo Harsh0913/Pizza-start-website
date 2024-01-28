@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body1>
+
+    <h1>Pizza Order Form</h1>
+
+        <label for="numberOfPizzas">Number of Pizzas:</label>
+        <input type="text" id="numberOfPizzas" name="numberOfPizzas" required>
+
+        <label for="pizzaSize">Size (Number of Slices):</label>
+        <input type="text" id="pizzaSize" name="pizzaSize" required>
+
+        <label>Shape:</label>
+        <label><input type="radio" name="pizzaShape" value="round" checked> Round</label>
+        <label><input type="radio" name="pizzaShape" value="square"> Square</label>
+
+        <label for="toppings">Toppings:</label>
+        <input type="text" id="toppings" name="toppings" required>
+
+        <label>Crust Type:</label>
+        <select name="crustType" id="crustType">
+            <option value="deepDish">Deep Dish</option>
+            <option value="thinCrust">Thin Crust</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Delivery Options:</label>
+        <label><input type="checkbox" name="deliveryOption" value="takeOut"> Take Out</label>
+        <label><input type="checkbox" name="deliveryOption" value="delivery"> Delivery</label>
+        <label><input type="checkbox" name="deliveryOption" value="eatIn"> Eat-In</label>
+
+        <button onclick="Order()">Place Order</button>
+        <button onclick="Front()">Go Back</button>
+
+        <script>
+            function Front() {
+                window.location.href = "Front.html";
+            }
+        </script>
+
+        <script>
+            function Order(){
+                window.location.href = "Order.html"
+            }
+        </script>
+
+</body1>
+</html>
